@@ -1,0 +1,27 @@
+
+
+add_executable(globalInfoTest GlobalInfotest.cpp)
+add_executable(rayScheduleFail rayScheduleFail.cpp)
+add_executable(rayScheduleSuccess rayScheduleSuccess.cpp)
+add_executable(rayScheduleObjectTableInMemory rayScheduleObjectTableInMemory.cpp)
+
+add_executable(rayScheduleObjectTableInMemoryObjectLarger rayScheduleObjectTableInMemoryObjectLarger.cpp)
+add_executable(rayScheduleObjectTableInMemoryObjectInDisk rayScheduleObjectTableInMemoryObjectInDisk.cpp)
+add_executable(press pressTest.cpp)
+
+add_executable(sharedObjectTest SharedObjectTest.cpp ObjTableManager.cpp)
+target_compile_options(sharedObjectTest
+    PRIVATE
+    "-DTestStorage"
+)
+
+target_link_libraries(sharedObjectTest ConfigAnalyse RayTest Entity Engine gtest pthread)
+
+target_link_libraries(globalInfoTest ConfigAnalyse Ray Entity Engine gtest pthread)
+target_link_libraries(rayScheduleFail ConfigAnalyse Ray Entity Engine gtest pthread)
+target_link_libraries(rayScheduleSuccess ConfigAnalyse Ray Entity Engine gtest pthread)
+target_link_libraries(rayScheduleObjectTableInMemory ConfigAnalyse Ray Entity Engine gtest pthread)
+
+target_link_libraries(rayScheduleObjectTableInMemoryObjectLarger ConfigAnalyse Ray Entity Engine gtest pthread)
+target_link_libraries(rayScheduleObjectTableInMemoryObjectInDisk ConfigAnalyse Ray Entity Engine gtest pthread)
+target_link_libraries(press ConfigAnalyse Ray Entity Engine gtest pthread test)

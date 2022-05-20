@@ -1,0 +1,146 @@
+{
+  "DataServer": {
+    "CPUAndMemory": {
+      "CPU": {
+        "Socket0": {
+          "Cycle": 1.0,
+          "CPI": 2.0,
+          "CoreNum": 32,
+          "Node": 0
+        },
+        "Socket1": {
+          "Cycle": 10.0,
+          "CPI": 20.0,
+          "CoreNum": 32,
+          "Node": 1
+        },
+        "Socket2": {
+          "Cycle": 10.0,
+          "CPI": 20.0,
+          "CoreNum": 32,
+          "Node": 0
+        }
+      },
+      "Memory": {
+        "numa0": {
+          "Size": 137438953472,
+          "LantencyFactor": 1.5
+        },
+        "numa1": {
+          "Size": 137438953472,
+          "LantencyFactor": 1.5
+        }
+      },
+      "NUMALatencyFactor": 1.0
+    },
+    "Disk": {
+      "Disk0": {
+        "ChannelNum": 1,
+        "MaxReadBandwidth": 2,
+        "MaxWriteBandWidth": 3,
+        "MaxReadBandWidthPerChannel": 4,
+        "MaxWriteBandWidthPerChannel": 5,
+        "ReadBaseLatency": 6,
+        "WriteBaseLatency": 7
+      },
+      "Disk1": {
+        "ChannelNum": 10,
+        "MaxReadBandwidth": 20,
+        "MaxWriteBandWidth": 30,
+        "MaxReadBandWidthPerChannel": 40,
+        "MaxWriteBandWidthPerChannel": 50,
+        "ReadBaseLatency": 60,
+        "WriteBaseLatency": 70
+      },
+      "Disk2": {
+        "ChannelNum": 100,
+        "MaxReadBandwidth": 200,
+        "MaxWriteBandWidth": 300,
+        "MaxReadBandWidthPerChannel": 400,
+        "MaxWriteBandWidthPerChannel": 500,
+        "ReadBaseLatency": 600,
+        "WriteBaseLatency": 700
+      }
+    },
+    "NetDriver": {
+      "NetDriver1": {
+        "SendDelay": 43.0,
+        "InternetDelay": 36.0,
+        "DownBandWidth": 12500.0,
+        "UpBandWidth": 100000.0
+      }
+    }
+  },
+  "ComputeServer": {
+    "CPUAndMemory": {
+      "CPU": {
+        "Socket0": {
+          "Cycle": 1.0,
+          "CPI": 2.0,
+          "CoreNum": 32,
+          "Node": 0
+        },
+        "Socket1": {
+          "Cycle": 10.0,
+          "CPI": 20.0,
+          "CoreNum": 32,
+          "Node": 1
+        },
+        "Socket2": {
+          "Cycle": 10.0,
+          "CPI": 20.0,
+          "CoreNum": 32,
+          "Node": 0
+        }
+      },
+      "Memory": {
+        "numa0": {
+          "Size": 137438953472,
+          "LantencyFactor": 1.5
+        },
+        "numa1": {
+          "Size": 137438953472,
+          "LantencyFactor": 1.5
+        }
+      },
+      "NUMALatencyFactor": 1.0
+    },
+    "Disk": {
+      "Disk0": {
+        "ChannelNum": 1,
+        "MaxReadBandwidth": 2,
+        "MaxWriteBandWidth": 3,
+        "MaxReadBandWidthPerChannel": 4,
+        "MaxWriteBandWidthPerChannel": 5,
+        "ReadBaseLatency": 6,
+        "WriteBaseLatency": 7
+      },
+      "Disk1": {
+        "ChannelNum": 10,
+        "MaxReadBandwidth": 20,
+        "MaxWriteBandWidth": 30,
+        "MaxReadBandWidthPerChannel": 40,
+        "MaxWriteBandWidthPerChannel": 50,
+        "ReadBaseLatency": 60,
+        "WriteBaseLatency": 70
+      },
+      "Disk2": {
+        "ChannelNum": 100,
+        "MaxReadBandwidth": 200,
+        "MaxWriteBandWidth": 300,
+        "MaxReadBandWidthPerChannel": 400,
+        "MaxWriteBandWidthPerChannel": 500,
+        "ReadBaseLatency": 600,
+        "WriteBaseLatency": 700
+      }
+    },
+    "NetDriver": {
+      "NetDriver1": {
+        "SendDelay": 43.0,
+        "InternetDelay": 36.0,
+        "DownBandWidth": 12500.0,
+        "UpBandWidth": 100000.0
+      }
+    }
+  }
+}

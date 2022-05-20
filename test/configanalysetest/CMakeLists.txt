@@ -1,0 +1,3 @@
+add_executable(ConfigFileAnalyseTest ConfigFileAnalyseTest.cpp)
+
+target_link_libraries(ConfigFileAnalyseTest ConfigAnalyse gtest pthread)
